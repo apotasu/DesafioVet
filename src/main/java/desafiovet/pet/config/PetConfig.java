@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
 public class PetConfig {
     @Autowired
     private PetService petService;
-    @PostConstruct
+
+
     public void init(){
         Pet exemplo = new Pet(new Dono("João", 21, "12345678901"),"Kazinski o destruir de mundos", 1, 99);
         petService.addNewPet(exemplo);

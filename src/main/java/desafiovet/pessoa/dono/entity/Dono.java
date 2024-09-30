@@ -11,7 +11,6 @@ import jakarta.persistence.OneToOne;
 public class Dono extends Pessoa {
     @OneToOne
     private Pet pet;
-    private String documento;
 
     public Dono(String nome, int idade, String documento, Pet pet) {
         super(nome, idade, documento);
@@ -24,5 +23,15 @@ public class Dono extends Pessoa {
     public Dono() {
 
     }
+
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
+
 }
 

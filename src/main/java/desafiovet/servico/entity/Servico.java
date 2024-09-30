@@ -35,6 +35,10 @@ public class Servico {
         this.duracao = duracao;
     }
 
+    public Servico() {
+
+    }
+
     public Pet getPet() {
         return pet;
     }

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class FuncionarioConfig {
     @Autowired
     private FuncionarioService funcionarioService;
-    @PostConstruct
+
     public void init(){
         Funcionario exemplo = new Funcionario("Josue", 21, "12345678901", 2000);
         funcionarioService.addNewFuncionario(exemplo);

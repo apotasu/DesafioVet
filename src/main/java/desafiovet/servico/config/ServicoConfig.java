@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class ServicoConfig {
     @Autowired
     private ServicoService servicoService;
-    @PostConstruct
+
     public void init(){
         Pet exemplo = new Pet(new Dono("João", 21, "12345678901"),"Kazinski o destruir de mundos", 1, 99);
         Funcionario funcionario = new Funcionario("Ricardo", 30, "12345678912", 3000);
